@@ -1,0 +1,34 @@
+@font-face {
+    font-family:'PX';
+    src: url('aAnotherTag.otf') format('opentype'), url('aAnotherTag.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'GF';
+    src:url('THE_JACATRA.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'BG';
+    src:url('Bombing.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'BR';
+    src:url('Blank River.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'B';
+    src:url('Billy_2.0.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}

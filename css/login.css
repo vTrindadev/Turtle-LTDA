@@ -1,0 +1,152 @@
+/* COMENTARIO */
+/*GERAL*/
+body{
+    background-color: #304D63;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+}
+main{
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 50px;
+    font-weight: bold;
+    font-family: B, times;
+    font-size: 30px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    font-family: B;
+    font-size: 30px;
+}
+
+h1{
+   font-weight: 200; 
+}
+
+a{
+    color: white;
+    font-size: 20px;
+}
+
+a:hover{
+    color:#8FB9AA;
+    transition: 0.3s all;
+}
+
+
+#enter{
+    font-weight: bold;
+    border: 2px solid #8FB9AA ;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+#enter:hover{
+    background-color: #8FB9AA;
+    color: white;
+    transform: scale(1.2);
+}
+
+/* FORMULARIO */
+
+h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-family: B;
+}
+
+
+.textfield{
+    width: 30%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: none;
+    border-radius: 20px;
+    box-shadow: 10px 20px 60px #cccccc41;
+    }
+
+input{
+    width: 60%;
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: 15px;
+}
+
+
+#ph_email{
+    font-family: B;
+    font-size: 20px;
+    width: 90%;
+}
+
+#ph_senha{
+    font-family: B;
+    font-size: 20px;
+    width: 90%;
+}
+
+#btn_entrar{
+    margin-top: 20px;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #8FB9AA;
+    border: 2px solid #8FB9AA ;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+#btn_entrar:hover {
+    background-color: #304D63;
+    color: white;
+    transform: scale(1.2);
+  }
