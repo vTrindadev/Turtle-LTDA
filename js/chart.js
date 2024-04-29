@@ -39,9 +39,9 @@ class Chart {
 
 let charts = [];
 
-charts.push(new Chart(aPath,aText,50));
-charts.push(new Chart(bPath,bText,50));
-charts.push(new Chart(gPath,gText,50));
+charts.push(new Chart(aPath,aText,39.29));
+charts.push(new Chart(bPath,bText,25));
+charts.push(new Chart(gPath,gText,14.29));
 
 function Frame() {
   rid = window.requestAnimationFrame(Frame);
