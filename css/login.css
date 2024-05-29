@@ -68,7 +68,7 @@
     color: white;
  }
 
-#box-form form button{
+#box-form form a{
     margin-top: 2vh;
     width: 60%;
     height: 5vh;
@@ -77,8 +77,13 @@
     box-shadow:5px 5px 15px 5px #00000042;
     border: unset;
     font-size: 1vw;
+    font-weight: 700;
     color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
 }
-#box-form form button:hover{
+#box-form form a:hover{
     background-color: #028663;
 }
