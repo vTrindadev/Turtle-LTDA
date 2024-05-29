@@ -4,14 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Linking external CSS files -->
     <link rel="stylesheet" href="css/padrao.css">
     <link rel="stylesheet" href="css/home.css">
     <title>Turtle LTDA</title>
+    <style>
+        /* Adding basic styles for the flower container and animation */
+        .flower {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('img/flower.png') no-repeat center center;
+            background-size: contain;
+            opacity: 0;
+            animation: bloom 2s forwards;
+        }
+
+        @keyframes bloom {
+            0% {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation menu section -->
     <section id="menu">
-        <img id="Logo" src="img/LogoContorno.png" alt="">
+        <img id="Logo" src="img/LogoContorno.png" alt="Logo Turtle LTDA">
         <div class="opt-menu">
+            <!-- Navigation links -->
             <a href="home.html" class="btn-menu activo">
                 <h3>Home</h3>
             </a>
@@ -26,17 +56,46 @@
             </a>
         </div>
         <div class="opt-menu">
+            <!-- Logout link -->
             <a href="index.html" class="btn-menu-sair">
                 <h3>Sair</h3>
             </a>
         </div>
     </section>
+    
+    <!-- Main content section -->
     <section id="conteiner">
         <div id="textos">
             <h1>Bem-vindo!</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ex, inventore non magni at distinctio corrupti sapiente quisquam consequatur illo quaerat repellendus perspiciatis necessitatibus vitae dolor mollitia consequuntur iusto iure.</h3>
-            <button>Saiba mais!</button>
+            <h3>Olá, equipe Turtle! Este é o seu espaço exclusivo para acompanhar de perto o processo de fabricação, obter atualizações sobre a empresa e se manter conectado com tudo o que está acontecendo na Turtle. Estamos comprometidos em manter todos bem informados e engajados, e este portal é uma das maneiras pelas quais podemos alcançar isso.</h3>
+            <!-- Button with click event to trigger flower animation -->
+            <button id="saibaMaisBtn">Saiba mais!</button>
         </div>
+        <!-- Container for flower animation -->
+        <div id="flowerContainer"></div>
     </section>  
+
+    <script>
+        // JavaScript to handle the animation
+        document.getElementById('saibaMaisBtn').addEventListener('click', () => {
+            const flowerContainer = document.getElementById('flowerContainer');
+            
+            // Create a new flower element
+            const flower = document.createElement('div');
+            flower.className = 'flower';
+
+            // Randomly position the flower within the container
+            flower.style.top = Math.random() * 100 + '%';
+            flower.style.left = Math.random() * 100 + '%';
+
+            // Append the flower to the container
+            flowerContainer.appendChild(flower);
+
+            // Remove the flower after animation to keep DOM clean
+            flower.addEventListener('animationend', () => {
+                flowerContainer.removeChild(flower);
+            });
+        });
+    </script>
 </body>
 </html>
