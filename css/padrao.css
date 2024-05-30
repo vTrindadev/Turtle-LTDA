@@ -99,3 +99,22 @@ body{
 #menu .btn-menu-sair:hover{
     background-color: #0d1e2f;
 }
+
+
+
+.st1 {
+    fill: #cccccc;
+  }
+  
+  #shark,
+  #turtle,
+  #clownfish,
+  #octopus,
+  #crab,
+  #starfish,
+  #jellyfish,
+  #seahorse,
+  #dolphin {
+    visibility: hidden;
+  }
+  
