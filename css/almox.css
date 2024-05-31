@@ -1,0 +1,66 @@
+
+#conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+.table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.table thead tr {
+    background-color: #01bb88;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 1.5vw 2vh;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #313131;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #313131;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #01bb88;
+}
+
+.table tbody tr:hover {
+    background-color: #434343;
+}
+
+select {
+    padding: 8px;
+    border: 2px solid #434343;
+    border-radius: 4px;
+    background-color: #434343;
+    color: #ffffff;
+    outline: none;
+    font-size: .8vw;
+}
+.table tbody tr:hover select {
+    border-color: #01bb88;
+}
+

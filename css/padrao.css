@@ -87,12 +87,9 @@ body{
     height: 6vh;
     background-color: #122b43;
     border-radius: 0vw 1vw 1vw 0;
+    border: none;
     font-size: 1vw;
     color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow:2px 2px 10px 5px #0000001f;
 }
 

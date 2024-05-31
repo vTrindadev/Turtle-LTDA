@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="js/verificador.js"></script>
+
     <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="css/almox.css">
 
     <title>Turtle LTDA</title>
 </head>
@@ -26,13 +29,68 @@
             </a>
         </div>
         <div class="opt-menu">
-            <a href="index.html" class="btn-menu-sair">
-                <h3>Sair</h3>
-            </a>
+            <button id="logoutButton" class="btn-menu-sair">Sair</button>
         </div>
     </section>
     <section id="conteiner">
-        
+        <h2>Tabela de Peças</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Peça</th>
+                    <th>Material</th>
+                    <th>Peso (KG)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Peça 1</td>
+                    <td>Aço</td>
+                    <td>10.3 KG</td>
+                    <td>
+                        <select>
+                            <option>Peça Morta</option>
+                            <option>Peça Finalizada</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Peça 2</td>
+                    <td>Alumínio</td>
+                    <td>5.7 KG</td>
+                    <td>
+                        <select>
+                            <option>Peça Morta</option>
+                            <option>Peça Finalizada</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Peça 3</td>
+                    <td>Latão</td>
+                    <td>20.4 KG</td>
+                    <td>
+                        <select>
+                            <option>Peça Morta</option>
+                            <option>Peça Finalizada</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Peça 4</td>
+                    <td>Cobre</td>
+                    <td>1.2 KG</td>
+                    <td>
+                        <select>
+                            <option>Peça Morta</option>
+                            <option>Peça Finalizada</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
     </section>  
 </body>
 </html>
