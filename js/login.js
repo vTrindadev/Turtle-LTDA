@@ -24,3 +24,4 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         alert('Usuário ou senha incorretos');
     }
 });
+
