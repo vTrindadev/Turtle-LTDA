@@ -1,96 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/verificador.js"></script>
+        <link rel="stylesheet" href="css/padrao.css">
+        <link rel="stylesheet" href="css/almox.css">
+    
+        <title>Turtle LTDA</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="js/verificador.js"></script>
+    </head>
+    <body>
+        <section id="menu">
+            <img id="Logo" src="img/teste.png" alt="">
+            <div class="opt-menu">
+                <a href="home.html" class="btn-menu">
+                    <h3>Home</h3>
+                </a>
+                <a href="almox.html" class="btn-menu activo">
+                    <h3>Almoxarifado</h3>
+                </a>
+                <a href="usuario.html" class="btn-menu">
+                    <h3>Usuários</h3>
+                </a>
+                <a href="producao.html" class="btn-menu">
+                    <h3>Produção</h3>
+                </a>
+            </div>
+            <div class="opt-menu">
+                <button id="logoutButton" class="btn-menu-sair">Sair</button>
+            </div>
+        </section>
+        <section id="conteiner">
+            <h2>Adicionar Nova Peça</h2>
+            <form id="addItemForm" name="Turtle-LTDA">
+                <div id="inputs">
+                    <div class="inputsInt">
+                        <label for="peca">Peça:</label>
+                        <input type="text" id="peca" name="PEÇA" required>
+                    </div>
+                    <div class="inputsInt">
+                        <label for="material">Material:</label>
+                        <input type="text" id="material" name="MATERIAL" required>
+                    </div>
+                    <div class="inputsInt">
+                        <label for="peso">Peso (KG):</label>
+                        <input type="text" id="peso" name="PESO" required>
+                    </div>
+                    <div class="inputsInt">
+                        <label for="status">Status:</label>
+                        <select id="status" name="STATUS" required>
+                            <option value="Peça Morta">Peça Morta</option>
+                            <option value="Peça Finalizada">Peça Finalizada</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <input type="submit" value="Adicionar" id="submit">
+            </form>
 
-    <link rel="stylesheet" href="css/padrao.css">
-    <link rel="stylesheet" href="css/almox.css">
+            <h2>Tabela de Peças</h2>
+            <table id="tabela" class="table">
+                <thead>
+                    <tr>
+                        <th>Peça</th>
+                        <th>Material</th>
+                        <th>Peso (KG)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados da planilha serão inseridos aqui -->
+                </tbody>
+            </table>
+        </section>  
+    
+        <!-- Pop-up de Loading -->
+        <div id="loading">
+            <div class="box-loading">
+                <h1>Carregando...</h1>
+            </div>
+        </div> 
 
-    <title>Turtle LTDA</title>
-</head>
-<body>
-    <section id="menu">
-        <img id="Logo" src="img/teste.png" alt="">
-        <div class="opt-menu">
-            <a href="home.html" class="btn-menu activo">
-                <h3>Home</h3>
-            </a>
-            <a href="almox.html" class="btn-menu">
-                <h3>Almoxarifado</h3>
-            </a>
-            <a href="usuario.html" class="btn-menu">
-                <h3>Usuários</h3>
-            </a>
-            <a href="producao.html" class="btn-menu">
-                <h3>Produção</h3>
-            </a>
-        </div>
-        <div class="opt-menu">
-            <button id="logoutButton" class="btn-menu-sair">Sair</button>
-        </div>
-    </section>
-    <section id="conteiner">
-        <h2>Tabela de Peças</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Peça</th>
-                    <th>Material</th>
-                    <th>Peso (KG)</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Peça 1</td>
-                    <td>Aço</td>
-                    <td>10.3 KG</td>
-                    <td>
-                        <select>
-                            <option>Peça Morta</option>
-                            <option>Peça Finalizada</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Peça 2</td>
-                    <td>Alumínio</td>
-                    <td>5.7 KG</td>
-                    <td>
-                        <select>
-                            <option>Peça Morta</option>
-                            <option>Peça Finalizada</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Peça 3</td>
-                    <td>Latão</td>
-                    <td>20.4 KG</td>
-                    <td>
-                        <select>
-                            <option>Peça Morta</option>
-                            <option>Peça Finalizada</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Peça 4</td>
-                    <td>Cobre</td>
-                    <td>1.2 KG</td>
-                    <td>
-                        <select>
-                            <option>Peça Morta</option>
-                            <option>Peça Finalizada</option>
-                        </select>
-                    </td>
-                </tr>
-                <!-- Adicione mais linhas conforme necessário -->
-            </tbody>
-        </table>
-    </section>  
-</body>
+        <script src="js/GET_almox.js"></script>
+        <script src="js/verificador.js"></script>
+    </body>
 </html>

@@ -1,0 +1,191 @@
+#conteiner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*LOADING*/
+#loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #00000069;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-loading{
+    background-color: #01bb89b0;
+    position: fixed;
+    left: 40%;
+    top: 40%;
+    border-radius: 2vw;
+    padding: 5vh 5vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.289);
+}
+#loading h1{
+    color: white;
+    font-size: 2vw;
+    font-weight: 800;
+
+}
+
+
+
+/* Estilo dos inputs do formulário */
+form#addItemForm {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#inputs{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.inputsInt{
+    display: flex;
+    flex-direction: column;
+}
+
+form#addItemForm label {
+    color: #ffffff;
+    font-size: 1vw;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 10vw;
+}
+
+form#addItemForm input[type="text"],
+form#addItemForm select {
+    width: 11vw;
+    padding: 1vw 1vh;
+    margin-bottom: 1.5vw;
+    border: 2px solid #434343;
+    border-radius: 4px;
+    background-color: #434343;
+    color: #ffffff;
+    outline: none;
+    font-size: 1vw;
+    transition: border-color 0.2s ease-in-out;
+}
+
+form#addItemForm input[type="text"]:focus,
+form#addItemForm select:focus {
+    border-color: #01bb88;
+}
+
+form#addItemForm input[type="submit"] {
+    width: 50%;
+    padding: 1vw 2vh;
+    margin-top: .5vw;
+    border: none;
+    border-radius: 4px;
+    background-color: #01bb88;
+    color: #ffffff;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form#addItemForm input[type="submit"]:hover {
+    background-color: #019b70;
+}
+
+
+/*TABELA*/
+
+h2 {
+    color: #ffffff;
+    font-size: 2vw;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+}
+
+.table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+.table thead{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2vw;
+}
+.table thead tr {
+    border-radius: 1vw 1vw 0 0 ;
+    background-color: #01bb88;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 1vw;
+}
+
+.table th,
+.table td {
+    width: 100%;
+    padding: 1.5vw 2vh;
+}
+
+.table tbody {
+    width: 100%;
+    max-height: 70vh; /* Ajuste a altura conforme necessário */
+    overflow-y: auto;
+    border-radius: 0 0 1vw 1vw;
+}
+
+.table tbody tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #313131;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #313131;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #01bb88;
+}
+
+.table tbody tr:hover {
+    background-color: #434343;
+}
+
+select {
+    padding: 8px;
+    border: 2px solid #434343;
+    border-radius: 4px;
+    background-color: #434343;
+    color: #ffffff;
+    outline: none;
+    font-size: 0.8vw;
+}
+.table tbody tr:hover select {
+    border-color: #01bb88;
+}
+
