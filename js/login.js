@@ -11,7 +11,15 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         
         // Redireciona para a página de sucesso (pode substituir pelo URL real)
         window.location.href = 'home.html';
-    } else {
+    }
+    if (username === 'Turtle' && password === '2024') {
+        // Define um item no localStorage para indicar que o usuário está logado
+        localStorage.setItem('isLoggedIn', 'true');
+        
+        // Redireciona para a página de sucesso (pode substituir pelo URL real)
+        window.location.href = 'home.html';
+    }
+    else {
         // Mostra uma mensagem de erro
         alert('Usuário ou senha incorretos');
     }
