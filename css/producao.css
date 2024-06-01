@@ -1,70 +1,71 @@
 #conteiner {
     width: 85vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
-
-
-/*TABELA*/
 
 h2 {
     color: #ffffff;
     font-size: 2vw;
-    margin-top: 5vh;
-    margin-bottom: 1vh;
+}
+
+#titulo {
+    font-size: 2.5vw;
+    margin-bottom: 7vh;
+}
+
+#area-tabelas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-tabela {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 1vw;
     text-align: center;
-    border-radius: 2vw;
+    border-radius: 8px;
+    overflow: hidden;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
 }
 
-.table thead{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-radius: 2vw;
-}
 .table thead tr {
-    border-radius: 1vw 1vw 0 0 ;
     background-color: #01bb88;
-    width: 100%;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
-    display: flex;
-    justify-content: space-around;
-    padding-right: 1vw;
 }
 
 .table th,
 .table td {
-    width: 100%;
     padding: 1.5vw 2vh;
 }
 
 .table tbody {
-    width: 100%;
-    max-height: 70vh; /* Ajuste a altura conforme necessário */
+    display: block;
+    max-height: 60vh;
     overflow-y: auto;
-    border-radius: 0 0 1vw 1vw;
+}
+
+.table thead,
+.table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
 
 .table tbody tr {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
     border-bottom: 1px solid #313131;
     transition: background-color 0.2s ease-in-out;
 }
@@ -81,16 +82,16 @@ h2 {
     background-color: #434343;
 }
 
-select {
-    padding: 8px;
-    border: 2px solid #434343;
+button.save-button {
+    padding: 8px 12px;
+    border: none;
     border-radius: 4px;
-    background-color: #434343;
+    background-color: #01bb88;
     color: #ffffff;
-    outline: none;
-    font-size: 0.8vw;
-}
-.table tbody tr:hover select {
-    border-color: #01bb88;
+    cursor: pointer;
+    font-size: 1vw;
 }
 
+button.save-button:hover {
+    background-color: #019b70;
+}
